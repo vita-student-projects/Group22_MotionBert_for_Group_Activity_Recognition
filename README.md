@@ -1,0 +1,1 @@
+# Group22_MotionBert_for_Group_Activity_Recognition
