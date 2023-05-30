@@ -34,13 +34,13 @@ python3 tools/data/custom_2d_skeleton.py --video-list <path_to_video_list> --out
 ```
 It will generate a pkl file.
 We need one more step before starting the activity recognition: we need to modify our pkl file, to make it usable in motionbert.
-To do this, go in the directory /pose_extraction, 
+To do this, go in the /pose_extraction directory , 
 and modify the file merge_pkl.py to specify the input and output path
 Then run:
 ```shell
 python3 merge_pkl.py
 ```
-You can now start the pose extraction
+You can now start the pose extraction.
 
 
 ## Activity Recognition
