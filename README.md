@@ -82,13 +82,13 @@ To run the script, enters this line in your .sh file. A GPU is necessary for the
 python train_action_volley.py \
 --config configs/action/MB_ft_volley_xsub.yaml \
 --pretrained checkpoint/pretrain/MB_release \
---checkpoint checkpoint/action/FT_MB_release_MB_ft_NTU60_xsub
+--checkpoint checkpoint/action/FT_MB_release_MB_ft_volley_xsub
 ```
 ### Evaluation 
 ```shell
 python train_action_volley.py \
---config configs/action/MB_train_NTU60_xsub.yaml \
---evaluate checkpoint/action/MB_train_NTU60_xsub/best_epoch.bin 
+--config configs/action/MB_train_volley_xsub.yaml \
+--evaluate checkpoint/action/MB_train_volley_xsub/best_epoch.bin 
 ```
 
 
