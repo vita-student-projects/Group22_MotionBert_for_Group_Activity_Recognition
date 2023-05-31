@@ -61,6 +61,7 @@ You can now start the pose extraction.
 ![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints_2.gif)
 ![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints_3.gif)
 
+We can see in red the extracted skeleton joints from all the people detected in the videos. The blue markers indicate the players that we keep in the final pkl file.
 ## Activity Recognition
 
 To solve this problem, we decided to use an existing model that has the capability to detect action based on the body joints.
