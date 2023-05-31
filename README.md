@@ -26,7 +26,6 @@ Once downloaded, put your dataset in the videos folder
 
 In order to extract the poses, we use a 2D pose extraction tool using HRNet from pyskl.
 
-MODIFY THIS
 Installation of pyskl
 ```shell
 git clone https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition.git
