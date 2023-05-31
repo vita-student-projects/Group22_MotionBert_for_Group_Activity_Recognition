@@ -126,10 +126,16 @@ def train_with_config(args, opts):
     
     data_path = '/work/scitas-share/datasets/Vita/civil-459/%s.pkl' % args.dataset
     volley_xsub_train = ActionDataset(data_path=data_path, data_split=args.data_split+'_train', n_frames=args.clip_len, random_move=args.random_move, scale_range=args.scale_range_train)
-    volley_xsub_val = ActionDataset(data_path=data_path, data_split=args.data_split+'_val', n_frames=args.clip_len, random_move=False, scale_range=args.scale_range_test)
+    
+    if not opts.evaluate:
+        volley_xsub_val = ActionDataset(data_path=data_path, data_split=args.data_split+'_val', n_frames=args.clip_len, random_move=False, scale_range=args.scale_range_test)
+    else:
+        volley_xsub_val = ActionDataset(data_path=data_path, data_split=args.data_split+'_test', n_frames=args.clip_len, random_move=False, scale_range=args.scale_range_test)
+    
+
     train_loader = DataLoader(volley_xsub_train, **trainloader_params)
     test_loader = DataLoader(volley_xsub_val, **testloader_params)
-        
+    
     print(opts.checkpoint)
     chk_filename = os.path.join(opts.checkpoint, "latest_epoch.bin")
     if os.path.exists(chk_filename):
