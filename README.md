@@ -90,6 +90,8 @@ python train_action_volley.py \
 --pretrained checkpoint/pretrain/MB_release \
 --checkpoint checkpoint/action/FT_MB_release_MB_ft_volley_xsub
 ```
+
+Our generated checkpoint can be found with our pkl file on this drive: https://drive.google.com/drive/u/1/folders/1o8i3nzRWv58D1Hgl5Aruik8FyX8_CTSu
 ### Evaluation 
 ```shell
 python train_action_volley.py \
