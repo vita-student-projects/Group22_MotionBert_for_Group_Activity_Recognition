@@ -2,7 +2,7 @@
 ## Introduction
 The goal of this project is to identify action based on the movements and poses of the body joints captured from an RGB video.
 The project involves developing a deep learning model that can take 2D or 3D poses as input would then be trained to recognize different actions based on the sequence of skeletal joint positions.
-The main goal would be to detect the action of pedestrians and then in a fture step to be able to predict their actions. For an autonomous vehicule, it will allow to ensure the safety of everyone/better interaction between pedestrians and vehicules.
+The main goal would be to detect the action of pedestrians and then in a future step to be able to predict their actions. For an autonomous vehicule, it will allow to ensure the safety of everyone/better interaction between pedestrians and vehicules.
 
 In this project, we will mainly focus on a subproblem of activity recognition: group activity recognition. Group activity recognition refers to the collective behavior of a group of people, resulted from the individual actions of the persons and their interactions.
 
