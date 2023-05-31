@@ -76,8 +76,9 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvi
 pip install -r requirements.txt
 ```
 Before finetuning, place the following files (present in the main) at their corresponding locations:
+First download the best_epochs.bin and latest_epochs.bin from this drive : https://drive.google.com/drive/u/1/folders/1o8i3nzRWv58D1Hgl5Aruik8FyX8_CTSu
 best_epochs.bin : checkpoint/action/MB_train_volley_xsub
-latest_epochs.bin : checkpoint/action/FT_MB_release_MB_ft_volley_xsub
+latest_epochs.bin : checkpoint/pretrain/MB_release
 
 Moreover, change the data_path (line 127) in the train_action_volley.py according to your location of your pkl files.
 Pay attention to the number of frames in your video, you may need to modify it in the config file : MB_ft_volley_xsub.yaml
