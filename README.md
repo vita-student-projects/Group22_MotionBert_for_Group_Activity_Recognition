@@ -57,6 +57,7 @@ python3 merge_pkl.py
 It will merge the different pkl files in the input folder (if there are mutiple), generate new entries in the pkl file, like the label. It will perform tracking to always have the same people affected to the same entry, remove clips where the number of players is insufficient (here <8), and finally it removes the non-players by looking at annotations file in the videos folder (the annotations comes with the volleyball dataset).
 You can now start the pose extraction.
 
+![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints.gif)
 
 ## Activity Recognition
 
