@@ -58,6 +58,8 @@ It will merge the different pkl files in the input folder (if there are mutiple)
 You can now start the pose extraction.
 
 ![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints.gif)
+![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints_2.gif)
+![](https://github.com/vita-student-projects/Group22_MotionBert_for_Group_Activity_Recognition/blob/main/skeleton_joints_3.gif)
 
 ## Activity Recognition
 
