@@ -1,0 +1,8 @@
+r_set
+r_spike
+r-pass	
+r_winpoint	
+l_winpoint
+l-pass	
+l-spike
+l_set
