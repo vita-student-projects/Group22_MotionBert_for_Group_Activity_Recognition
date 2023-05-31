@@ -67,7 +67,8 @@ The model is first train on the H3.6M dataset and then finetune on the NTU60 dat
 
 The challenge of this project would be to implement in the code several people and then be able to extract a correlation between the skeleton of each person. Indeed, MotionBert has shown these results for NTU dataset that usually only include 2 people max. 
 
-### Installation MotionBert
+
+### Installation 
 ```shell
 conda create -n motionbert python=3.7 anaconda
 conda activate motionbert
@@ -75,6 +76,12 @@ conda activate motionbert
 conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
+Before finetuning, place the following files (present in the main) at their corresponding locations:
+best_epochs.bin : checkpoint/action/MB_train_volley_xsub
+latest_epochs.bin : checkpoint/action/FT_MB_release_MB_ft_volley_xsub
+
+Moreover, change the data_path (line 127) in the train_action_volley.py according to your location of your pkl files.
+Pay attention to the number of frames in your video, you may need to modify it in the config file : MB_ft_volley_xsub.yaml
 
 ### Finetuning part for action recognition
 To run the script, enters this line in your .sh file. A GPU is necessary for the finetuning part.
@@ -82,13 +89,13 @@ To run the script, enters this line in your .sh file. A GPU is necessary for the
 python train_action_volley.py \
 --config configs/action/MB_ft_volley_xsub.yaml \
 --pretrained checkpoint/pretrain/MB_release \
---checkpoint checkpoint/action/FT_MB_release_MB_ft_NTU60_xsub
+--checkpoint checkpoint/action/FT_MB_release_MB_ft_volley_xsub
 ```
 ### Evaluation 
 ```shell
 python train_action_volley.py \
---config configs/action/MB_train_NTU60_xsub.yaml \
---evaluate checkpoint/action/MB_train_NTU60_xsub/best_epoch.bin 
+--config configs/action/MB_train_volley_xsub.yaml \
+--evaluate checkpoint/action/MB_train_volley_xsub/best_epoch.bin 
 ```
 
 
